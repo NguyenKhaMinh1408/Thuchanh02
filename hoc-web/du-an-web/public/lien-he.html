@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Doctor Book</title>
+    <!-- Nhúng phông chữ Roboto từ Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Nạp file CSS chung -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- PHẦN ĐẦU TRANG -->
+    <header class="dau-trang">
+        <div class="khung-chua flex-ngang">
+            <div class="logo">
+                <h1>Doctor Book</h1>
+            </div>
+            
+            <div class="khung-tim-kiem">
+                <input type="text" placeholder="Tìm kiếm sách..." class="o-nhap-tim-kiem">
+                <button class="nut-tim-kiem">Tìm</button>
+            </div>
+
+            <nav class="trinh-don">
+                <ul class="danh-sach-trinh-don">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="cua-hang.html">Cửa hàng</a></li>
+                    <li><a href="chi-tiet.html">Chi tiết</a></li>
+                    <li><a href="lien-he.html">Liên hệ</a></li>
+                    <li><a href="#">Giỏ hàng</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="khung-chua">
+        <div class="bo-cuc-lien-he">
+            <!-- CỘT BÊN TRÁI: THÔNG TIN LIÊN HỆ -->
+            <section class="cot-thong-tin-lh">
+                <h2 class="tieu-de-trang-lh">Thông Tin Liên Hệ</h2>
+                <p style="margin-bottom: 20px;">Nếu bạn có thắc mắc, góp ý hoặc cần hỗ trợ đặt hàng, vui lòng liên hệ với Doctor Book qua các thông tin dưới đây hoặc gửi tin nhắn trực tiếp.</p>
+                
+                <ul class="danh-sach-chi-tiet-lh">
+                    <li><strong>Địa chỉ:</strong> 123 Đường Sách, Quận 1, TP. Hồ Chí Minh</li>
+                    <li><strong>Điện thoại:</strong> 0123 456 789</li>
+                    <li><strong>Email:</strong> hotro@doctorbook.vn</li>
+                    <li><strong>Giờ làm việc:</strong> 8:00 - 21:00 (Từ Thứ 2 đến Chủ Nhật)</li>
+                </ul>
+
+                <div class="ban-do-gia-lap">
+                    <span>[ Bản đồ vị trí Cửa hàng Doctor Book ]</span>
+                </div>
+            </section>
+
+            <!-- CỘT BÊN PHẢI: FORM GỬI PHẢN HỒI -->
+            <section class="cot-form-lien-he">
+                <h2 class="tieu-de-trang-lh">Gửi Tin Nhắn Cho Chúng Tôi</h2>
+                <form action="#" method="post">
+                    <div class="nhom-truong">
+                        <label for="ho-ten">Họ và tên *</label>
+                        <input type="text" id="ho-ten" name="ho-ten" class="truong-nhap" placeholder="Nhập họ và tên của bạn" required>
+                    </div>
+
+                    <div class="nhom-truong">
+                        <label for="email">Địa chỉ Email *</label>
+                        <input type="email" id="email" name="email" class="truong-nhap" placeholder="Nhập địa chỉ email" required>
+                    </div>
+
+                    <div class="nhom-truong">
+                        <label for="so-dien-thoai">Số điện thoại</label>
+                        <input type="tel" id="so-dien-thoai" name="so-dien-thoai" class="truong-nhap" placeholder="Nhập số điện thoại">
+                    </div>
+
+                    <div class="nhom-truong">
+                        <label for="chu-de">Chủ đề</label>
+                        <input type="text" id="chu-de" name="chu-de" class="truong-nhap" placeholder="Cần tư vấn, góp ý, khiếu nại...">
+                    </div>
+
+                    <div class="nhom-truong">
+                        <label for="noi-dung">Nội dung tin nhắn *</label>
+                        <textarea id="noi-dung" name="noi-dung" class="truong-nhap" placeholder="Viết nội dung tin nhắn tại đây..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="nut-gui-lh">Gửi Liên Hệ</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- PHẦN CHÂN TRANG -->
+    <footer class="chan-trang">
+        <div class="khung-chua danh-sach-cot-chan-trang">
+            <div class="cot-chan-trang">
+                <h4>Thông tin liên hệ</h4>
+                <p>Địa chỉ: 123 Đường Sách, TP. HCM</p>
+                <p>Điện thoại: 0123 456 789</p>
+                <p>Email: hotro@doctorbook.vn</p>
+            </div>
+            <div class="cot-chan-trang">
+                <h4>Mạng xã hội</h4>
+                <ul class="danh-sach-lien-ket">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Tiktok</a></li>
+                </ul>
+            </div>
+            <div class="cot-chan-trang">
+                <h4>Bản quyền</h4>
+                <p>© 2023 Doctor Book.</p>
+                <p>Bảo lưu mọi quyền.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

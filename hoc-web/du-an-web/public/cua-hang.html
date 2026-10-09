@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng - Doctor Book</title>
+    <!-- Nhúng phông chữ Roboto từ Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Nạp file CSS chung -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- PHẦN ĐẦU TRANG -->
+    <header class="dau-trang">
+        <div class="khung-chua flex-ngang">
+            <div class="logo">
+                <h1>Doctor Book</h1>
+            </div>
+            
+            <div class="khung-tim-kiem">
+                <input type="text" placeholder="Tìm kiếm sách..." class="o-nhap-tim-kiem">
+                <button class="nut-tim-kiem">Tìm</button>
+            </div>
+
+            <nav class="trinh-don">
+                <ul class="danh-sach-trinh-don">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="cua-hang.html">Cửa hàng</a></li>
+                    <li><a href="chi-tiet.html">Chi tiết</a></li>
+                    <li><a href="lien-he.html">Liên hệ</a></li>
+                    <li><a href="#">Giỏ hàng</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="khung-chua bo-cuc-cua-hang">
+        <!-- CỘT BÊN TRÁI: BỘ LỌC -->
+        <aside class="cot-bo-loc">
+            <div class="khoi-loc">
+                <h3>Danh mục sách</h3>
+                <ul>
+                    <li><a href="#">Tất cả sách</a></li>
+                    <li><a href="#">Văn học trong nước</a></li>
+                    <li><a href="#">Văn học nước ngoài</a></li>
+                    <li><a href="#">Kỹ năng sống</a></li>
+                    <li><a href="#">Sách thiếu nhi</a></li>
+                    <li><a href="#">Sách giáo khoa</a></li>
+                </ul>
+            </div>
+
+            <div class="khoi-loc mt-20">
+                <h3>Lọc theo giá</h3>
+                <ul>
+                    <li><label><input type="radio" name="gia"> Dưới 50.000 ₫</label></li>
+                    <li><label><input type="radio" name="gia"> 50.000 ₫ - 100.000 ₫</label></li>
+                    <li><label><input type="radio" name="gia"> Trên 100.000 ₫</label></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- CỘT BÊN PHẢI: DANH SÁCH SÁCH -->
+        <section class="cot-san-pham">
+            <!-- Thanh công cụ sắp xếp -->
+            <div class="thanh-cong-cu">
+                <p>Hiển thị 6 kết quả</p>
+                <select class="o-sap-xep">
+                    <option>Mới nhất</option>
+                    <option>Giá: Thấp đến Cao</option>
+                    <option>Giá: Cao đến Thấp</option>
+                </select>
+            </div>
+
+            <div class="danh-sach-sach danh-sach-cua-hang">
+                <article class="the-san-pham">
+                    <a href="chi-tiet.html"><img src="https://placehold.co/400x500?text=Sach+1" alt="Sách 1" class="anh-sach"></a>
+                    <h4 class="ten-sach"><a href="chi-tiet.html">Đắc Nhân Tâm</a></h4>
+                    <p class="gia-sach">85.000 ₫</p>
+                    <a href="chi-tiet.html" class="nut-mua">Xem chi tiết</a>
+                </article>
+                <article class="the-san-pham">
+                    <img src="https://placehold.co/400x500?text=Sach+2" alt="Sách 2" class="anh-sach">
+                    <h4 class="ten-sach">Nhà Giả Kim</h4>
+                    <p class="gia-sach">65.000 ₫</p>
+                    <a href="chi-tiet.html" class="nut-mua">Xem chi tiết</a>
+                </article>
+                <article class="the-san-pham">
+                    <img src="https://placehold.co/400x500?text=Sach+3" alt="Sách 3" class="anh-sach">
+                    <h4 class="ten-sach">Tuổi Trẻ Đáng Giá Bao Nhiêu</h4>
+                    <p class="gia-sach">75.000 ₫</p>
+                    <a href="chi-tiet.html" class="nut-mua">Xem chi tiết</a>
+                </article>
+                <article class="the-san-pham">
+                    <img src="https://placehold.co/400x500?text=Sach+4" alt="Sách 4" class="anh-sach">
+                    <h4 class="ten-sach">Hoàng Tử Bé</h4>
+                    <p class="gia-sach">55.000 ₫</p>
+                    <a href="chi-tiet.html" class="nut-mua">Xem chi tiết</a>
+                </article>
+                <article class="the-san-pham">
+                    <img src="https://placehold.co/400x500?text=Sach+5" alt="Sách 5" class="anh-sach">
+                    <h4 class="ten-sach">Tâm Lý Học Tội Phạm</h4>
+                    <p class="gia-sach">110.000 ₫</p>
+                    <a href="chi-tiet.html" class="nut-mua">Xem chi tiết</a>
+                </article>
+                <article class="the-san-pham">
+                    <img src="https://placehold.co/400x500?text=Sach+6" alt="Sách 6" class="anh-sach">
+                    <h4 class="ten-sach">Sức Mạnh Của Thói Quen</h4>
+                    <p class="gia-sach">130.000 ₫</p>
+                    <a href="chi-tiet.html" class="nut-mua">Xem chi tiết</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- PHẦN CHÂN TRANG -->
+    <footer class="chan-trang">
+        <div class="khung-chua danh-sach-cot-chan-trang">
+            <div class="cot-chan-trang">
+                <h4>Thông tin liên hệ</h4>
+                <p>Địa chỉ: 123 Đường Sách, TP. HCM</p>
+                <p>Điện thoại: 0123 456 789</p>
+                <p>Email: hotro@doctorbook.vn</p>
+            </div>
+            <div class="cot-chan-trang">
+                <h4>Mạng xã hội</h4>
+                <ul class="danh-sach-lien-ket">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Tiktok</a></li>
+                </ul>
+            </div>
+            <div class="cot-chan-trang">
+                <h4>Bản quyền</h4>
+                <p>© 2023 Doctor Book.</p>
+                <p>Bảo lưu mọi quyền.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

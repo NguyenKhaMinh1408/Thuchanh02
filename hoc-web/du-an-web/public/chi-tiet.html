@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm - Doctor Book</title>
+    <!-- Nhúng phông chữ Roboto từ Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Nạp file CSS chung -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- PHẦN ĐẦU TRANG -->
+    <header class="dau-trang">
+        <div class="khung-chua flex-ngang">
+            <div class="logo">
+                <h1>Doctor Book</h1>
+            </div>
+            
+            <div class="khung-tim-kiem">
+                <input type="text" placeholder="Tìm kiếm sách..." class="o-nhap-tim-kiem">
+                <button class="nut-tim-kiem">Tìm</button>
+            </div>
+
+            <nav class="trinh-don">
+                <ul class="danh-sach-trinh-don">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="cua-hang.html">Cửa hàng</a></li>
+                    <li><a href="chi-tiet.html">Chi tiết</a></li>
+                    <li><a href="lien-he.html">Liên hệ</a></li>
+                    <li><a href="#">Giỏ hàng</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="khung-chua">
+        <!-- KHỐI THÔNG TIN CHÍNH -->
+        <div class="bo-cuc-chi-tiet">
+            <!-- Cột bên trái: Ảnh -->
+            <div class="cot-anh-chi-tiet">
+                <img src="https://placehold.co/400x550?text=Dac+Nhan+Tam" alt="Đắc Nhân Tâm">
+            </div>
+            
+            <!-- Cột bên phải: Chi tiết và Mua hàng -->
+            <div class="cot-thong-tin-chi-tiet">
+                <h2 class="ten-sach-chi-tiet">Đắc Nhân Tâm</h2>
+                <p class="tac-gia">Tác giả: <strong>Dale Carnegie</strong></p>
+                <p class="gia-sach-chi-tiet">85.000 ₫</p>
+                
+                <div class="mo-ta-ngan">
+                    <p>Đắc Nhân Tâm là cuốn sách nổi tiếng nhất, bán chạy nhất và có tầm ảnh hưởng nhất của mọi thời đại. Cuốn sách mang lại những lời khuyên cực kỳ hữu ích trong việc giao tiếp, đối nhân xử thế và thu phục lòng người.</p>
+                </div>
+                
+                <div class="khung-dat-hang">
+                    <input type="number" class="o-so-luong" value="1" min="1">
+                    <a href="lien-he.html" class="nut-them-gio-hang-to">Liên hệ với chúng tôi</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- KHỐI MÔ TẢ DÀI -->
+        <div class="mo-ta-chi-tiet">
+            <h3>Mô tả sản phẩm</h3>
+            <p>Cuốn sách không chỉ dạy cách ứng xử, mà còn là nghệ thuật sống, giúp bạn hiểu rõ bản thân và những người xung quanh. Từ đó, bạn sẽ có một cuộc sống hạnh phúc và thành công hơn. Đắc Nhân Tâm là cuốn sách "gối đầu giường" của nhiều thế hệ người đọc trên toàn thế giới.</p>
+            <br>
+            <p>Phiên bản bìa mềm, giấy xốp nhẹ, chống lóa tốt, phù hợp cho việc đọc lâu không mỏi mắt. Đây chắc chắn là món quà ý nghĩa dành cho bản thân và bạn bè.</p>
+        </div>
+    </main>
+
+    <!-- PHẦN CHÂN TRANG -->
+    <footer class="chan-trang">
+        <div class="khung-chua danh-sach-cot-chan-trang">
+            <div class="cot-chan-trang">
+                <h4>Thông tin liên hệ</h4>
+                <p>Địa chỉ: 123 Đường Sách, TP. HCM</p>
+                <p>Điện thoại: 0123 456 789</p>
+                <p>Email: hotro@doctorbook.vn</p>
+            </div>
+            <div class="cot-chan-trang">
+                <h4>Mạng xã hội</h4>
+                <ul class="danh-sach-lien-ket">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Tiktok</a></li>
+                </ul>
+            </div>
+            <div class="cot-chan-trang">
+                <h4>Bản quyền</h4>
+                <p>© 2023 Doctor Book.</p>
+                <p>Bảo lưu mọi quyền.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
